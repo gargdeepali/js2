@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Effects</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="Jquery.js"></script>
+    </head>
+    <body>
+       <h1>Jquery effects</h1>
+       <div id="box">
+        <h2>Test box</h2>
+        <p>The sun dipped below the horizon, 
+           casting a warm glow across the tranquil 
+           countryside. </p>
+       </div>
+       <button id="fadeout">Fadeout</button>
+       <button id="fadein">Fadein</button>
+       <button id="fadetoggle">Fadetoggle</button>
+
+       <script>
+           $(document).ready(function(){
+                $('#fadeout').click(function(){
+                    $('#box').fadeOut();
+                });
+                $('#fadein').click(function(){
+                    $('#box').fadeIn();
+                });
+                $('#fadetoggle').click(function(){
+                    $('#box').fadeToggle();
+                });
+           }); 
+       </script>
+    </body>
+</html>
