@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>W and H</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="Jquery.js"></script>
+    </head>
+    <body>
+       <h1>Jquery width and height methods</h1> 
+
+       <div id="box">
+        <h2>Test box</h2>
+        <p>It's not only writers who can benefit from this free online tool.
+            If you're a programmer who's working on a project where blocks of 
+            text are needed, this tool can be a great way to get that. It's a 
+            good way to test your programming and that the tool being created 
+            is working well.</p>
+       </div>
+       <button id="widthbtn">Width</button>
+       <button id="heightbtn">Height</button>
+       <button id="position">Position</button>
+       <button id="offset">Offset</button>
+
+        <script>
+            $(document).ready(function(){
+        $('#widthbtn').click(function(){
+           var a = $('#box').width();
+           console.log(a);
+
+           var b = $('#box').innerWidth();
+           console.log(b);
+
+           var c = $('#box').outerWidth();
+           console.log(c);
+
+           var d = $('#box').outerWidth(true);
+           console.log(d);
+          
+        });
+
+        $('#heightbtn').click(function(){
+           var a = $('#box').height();
+           console.log(a);
+
+           var b = $('#box').innerHeight();
+           console.log(b);
+
+           var c = $('#box').outerHeight();
+           console.log(c);
+
+           var d = $('#box').outerHeight(true);
+           console.log(d);
+        });
+
+        $('#position').click(function(){
+           var a= $('#box').position();
+           console.log(a);
+        });
+
+        $('#offset').click(function(){
+           var a= $('#box').offset();
+           console.log(a);
+        });
+
+       });
+        </script>
+       
+        
+       
+    </body>
+</html>

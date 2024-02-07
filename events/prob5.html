@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title></title>
+        <script src="Jquery.js"></script>
+    </head>
+    <body>
+        <p>Click the button to change the background color of this paragraph</p>
+        <button id="box"></button>
+        <script>
+            $(document).ready(function(){
+                $('#box').click(function(){
+                    $('p').css('background-color','yellow');
+                });
+            });
+        </script>
+    </body>
+</html>

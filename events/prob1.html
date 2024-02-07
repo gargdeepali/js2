@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Problem1</title>
+        <link rel="stylesheet" href="">
+        <script src="Jquery.js"></script>
+    </head>
+    <body>
+            <p>Click me!</p>     
+            <script>
+                $(document).ready(function(){
+                    $('p').click(function(){
+                        $('p').append("<p>This is a click event</p>");
+                    });
+                    $('p').dblclick(function(){
+                        $('p').append("<p>This is a double-click event</p>");
+                    });
+
+                });
+            </script> 
+    </body>
+</html>

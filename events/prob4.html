@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title></title>
+        <script src="Jquery.js"></script>
+    </head>
+    <body>
+        <h1>Click me to add another</h1>
+        <script>
+            $(document).ready(function(){
+                $('h1').click(function(){
+                    $(this).after('<h1>Another tag</h1>');
+                });
+            });
+        </script>
+        
+    </body>
+</html>
